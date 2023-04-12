@@ -12,4 +12,4 @@ jobs:
           ls -ahl
       - name: Copy files to webroot
         run: |
-          cp -v . /home/web/demo-site
+          rsync -av . /home/web/demo-site
